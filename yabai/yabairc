@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# stack, float, bsp
+yabai -m config layout              float		\
+        	    auto_balance        off   	\
+                split_ratio         0.7 	\
+                window_placement    first_child\
+                window_animation_duration  0.1  \
+
+yabai -m config top_padding         0           \
+                bottom_padding      5           \
+                left_padding        5           \
+                right_padding       5           \
+                window_gap          7          \
+
+# autoraise _focus
+yabai -m config focus_follows_mouse autofocus   \
+                mouse_modifier      ctrl        \
+                mouse_action1       resize      \
+                mouse_action2       move        \
+                mouse_drop_action   swap #stack       \
+
+echo "yabai configuration loaded.."

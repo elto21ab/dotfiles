@@ -1,0 +1,40 @@
+# https://github.com/koekeishiya/skhd/issues/1
+# + between modifier keys, and - between normalkeys
+# useless: fn == 0x3F (hold) and 0xB3 (quick/release) <==> 0x3F  |  hyper == 0x3C
+
+# ralt - + : yabai -m query --windows
+# ralt + shift - + : yabai -m signal --list
+
+ralt - down : yabai -m window --swap south || yabai -m window --focus north
+ralt - up : yabai -m window --swap north || yabai -m window --focus south
+ralt - left : yabai -m window --swap west || yabai -m window --focus east
+ralt - right : yabai -m window --swap east || yabai -m window --focus west
+
+ralt - f : yabai -m window --toggle float
+ralt - s : yabai -m window --toggle sticky
+ralt - p : yabai -m window --toggle sticky --toggle pip
+
+ralt - e : yabai -m space --equalize 
+ralt - b : yabai -m space --balance
+ralt - r : yabai --restart-service & skhd --restart-service  # 0 == 0x1D
+
+# ctrl - 1 : yabai -m space --focus 1
+# ctrl - 2 : yabai -m space --focus 2
+# ctrl - 3 : yabai -m space --focus 3
+# ctrl - 4 : yabai -m space --focus 4
+# ctrl - 5 : yabai -m space --focus 5
+
+################ WORKS
+ctrl - 0x35 : yabai -m space --toggle show-desktop # 0x35 == esc | fn - z
+alt - return : open -a Terminal
+################ WORKS
+
+# alt - v : @toggle_app("Visual Studio Code")
+
+# .define focus_recent : yabai -m window --focus recent
+# cmd - ø : @focus_recent
+
+# alt - b : open -a Safari
+
+# lalt - m: yabai -m space --create
+# lalt - 0x30 : yabai -m space --focus recent # 0x30 == tab

@@ -1,0 +1,388 @@
+
+# 2024-12-12 18:49:27.799821
++y
+
+# 2024-12-12 18:50:35.048363
++aider --h
+
+# 2024-12-12 18:50:45.466873
++y
+
+# 2024-12-12 18:56:14.051351
++--openai-api-key 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
+
+# 2024-12-12 18:56:20.518303
++n
+
+# 2024-12-12 18:59:27.955652
++how do I run aider in a directory instead of home dir?
+
+# 2024-12-12 19:00:00.258803
++n
+
+# 2024-12-12 19:00:30.674117
++where do/should I store my api keys? 
+
+# 2024-12-12 19:07:20.251798
++--models
+
+# 2024-12-12 19:08:19.727201
++AIDER_LIST_MODELS
+
+# 2024-12-12 19:08:23.809098
++n
+
+# 2024-12-12 19:56:25.406815
++/help what api keys do you have access to right now? I'm not sure if I've put the keys at the right directory
+
+# 2024-12-12 19:56:40.915508
++y
+
+# 2024-12-12 19:57:18.924387
++aider --h
+
+# 2024-12-12 19:57:47.800798
++n
+
+# 2024-12-12 19:57:55.045124
++--env /Users/e/.config/aider/.env
+
+# 2024-12-12 19:57:58.399231
++n
+
+# 2024-12-12 20:00:20.148146
++--config /Users/e/.config/aider/.aider.conf.yml
+
+# 2024-12-12 20:00:22.383807
++n
+
+# 2024-12-12 20:07:32.607089
++aider --help
+
+# 2024-12-12 20:08:01.497203
++how do I check what API keys you have access to?
+
+# 2024-12-12 20:08:16.679607
++y
+
+# 2024-12-12 20:08:16.687397
++/run env
+
+# 2024-12-12 20:09:00.007646
++n
+
+# 2024-12-12 20:09:32.207047
++Where is the env variables stored? I want to find the specific file
+
+# 2024-12-12 20:13:19.049889
++y
+
+# 2024-12-12 20:13:19.060028
++/run grep 'VARIABLE_NAME' ~/.zshrc ~/.bashrc ~/.bash_profile /etc/profile /etc/paths
+
+# 2024-12-12 20:14:14.449723
++echo $OPENAI_API_KEY
+
+# 2024-12-12 20:14:27.754463
++y
+
+# 2024-12-12 20:14:27.759606
++/run export OPENAI_API_KEY='your_api_key_here'
+
+# 2024-12-12 20:14:30.831585
++/run source ~/.zshrc
+
+# 2024-12-12 20:16:27.760096
++/models
+
+# 2024-12-12 20:16:36.829286
++gpt
+
+# 2024-12-12 20:17:14.360020
++n
+
+# 2024-12-12 20:17:45.900698
++/ls
+
+# 2024-12-12 20:17:54.119633
++/model
+
+# 2024-12-12 20:18:23.233553
++/settings
+
+# 2024-12-12 20:19:43.361955
++/report
+
+# 2024-12-12 20:19:56.791684
++/map-refresh
+
+# 2024-12-12 20:20:06.823825
++/models
+
+# 2024-12-12 20:20:10.962885
++gpt
+
+# 2024-12-12 20:20:57.575120
++/settings
+
+# 2024-12-13 10:06:48.124652
++y
+
+# 2024-12-13 10:17:47.958238
++/settings
+
+# 2024-12-13 10:21:37.460662
++/se
+
+# 2024-12-13 10:24:42.108296
++--config ~/.config/aider/.aider.conf.yml
+
+# 2024-12-13 10:25:24.529926
++y
+
+# 2024-12-13 10:27:28.003017
++--verbose
+
+# 2024-12-13 10:27:58.828620
++aider --verbose
+
+# 2024-12-13 10:31:56.303766
++/se
+
+# 2024-12-13 10:32:23.695757
++/sa
+
+# 2024-12-13 10:32:33.809518
++/save
+
+# 2024-12-13 10:32:43.565845
++/settings
+
+# 2024-12-13 10:56:07.036193
++y
+
+# 2024-12-13 10:56:50.455642
++n
+
+# 2024-12-13 10:57:28.944256
++/settings
+
+# 2024-12-13 11:00:32.251978
++what is in my current directory path
+
+# 2024-12-13 11:01:55.936871
++clear
+
+# 2024-12-13 11:09:06.937829
++/add Users/e/.zshenv Users/e/.zshrc Users/e/.zprofile Users/e/.config/open-webui/config.json Users/e/.config/aider/.aider.conf.yml
+
+# 2024-12-13 11:09:26.736874
++n
+
+# 2024-12-13 11:14:42.641667
++/models
+
+# 2024-12-13 11:14:46.543435
++gemini
+
+# 2024-12-13 11:14:53.490588
++/model
+
+# 2024-12-13 11:17:43.830094
++n
+
+# 2024-12-13 11:18:02.109707
++y
+
+# 2024-12-13 11:27:03.200941
++Who are you
+
+# 2024-12-13 11:28:12.275848
++n
+
+# 2024-12-13 11:28:13.787022
++hi
+
+# 2024-12-13 11:28:20.397161
++who are you?
+
+# 2024-12-13 11:28:33.521287
++what model are you exactly?
+
+# 2024-12-13 11:30:14.585077
++n
+
+# 2024-12-13 11:30:28.743603
++who are you
+
+# 2024-12-13 11:33:27.466869
++who are you exactlyP
+
+# 2024-12-13 11:34:10.511953
++who are you?
+
+# 2024-12-13 11:45:05.385700
++/settings
+
+# 2024-12-13 11:46:05.766432
++cd into my code directory within documents
+
+# 2024-12-13 11:46:11.590643
++y
+
+# 2024-12-13 11:46:11.596013
++/run cd ~/Documents/code
+
+# 2024-12-13 11:46:11.596163
++/run cd ~/Documents/code
+
+# 2024-12-13 11:46:46.344676
++y
+
+# 2024-12-13 11:47:33.304933
++/run cd ~/Documents/_code
+
+# 2024-12-13 11:47:43.027073
++n
+
+# 2024-12-13 11:47:49.020194
++/run ls
+
+# 2024-12-13 11:48:31.956199
++n
+
+# 2024-12-13 11:48:41.738485
++/run ls
+
+# 2024-12-13 11:48:57.481742
++n
+
+# 2024-12-13 11:49:01.545572
++/run cd .
+
+# 2024-12-13 11:49:07.966309
++n
+
+# 2024-12-13 11:49:23.694485
++/settings
+
+# 2024-12-13 11:49:35.216077
++/chat-mode
+
+# 2024-12-13 15:41:57.935272
++y
+
+# 2024-12-17 10:07:31.853302
++/bye
+
+# 2024-12-17 10:08:18.989352
++y
+
+# 2024-12-17 10:09:03.262852
++clear
+
+# 2024-12-17 10:09:11.823700
++/architect
+
+# 2024-12-17 10:22:00.537488
++/architect Create a tool to make person lookup on social media platforms using OSINT. It should be used to compose a Text Corpus with insights about the person. For example, the program should take a [user]name as input, make search queries with google dorking, retrieve all relevant information about said person in a text file (when aggregating multiple sources, it should verify that the information is about the same person.
+
+# 2024-12-17 10:22:32.038503
++y
+
+# 2024-12-17 10:24:32.727247
++how do I try it out?
+
+# 2024-12-17 10:25:22.473429
++y
+
+# 2024-12-17 10:25:32.028259
++/run pip install requests beautifulsoup4 googlesearch-python
+
+# 2024-12-17 10:25:32.028375
++/run pip install requests beautifulsoup4 googlesearch-python
+
+# 2024-12-17 10:25:35.533375
++y
+
+# 2024-12-17 10:25:40.386799
++/run python osint_lookup.py johndoe
+
+# 2024-12-17 10:25:40.386974
++/run python osint_lookup.py johndoe
+
+# 2024-12-17 10:27:04.325165
++I believe there is an issue. Nothing is written to the output text file
+
+# 2024-12-17 10:28:02.003140
++when running it, I get "zsh> Running python osint_lookup.py johndoe
++zsh: command not found: Running"
+
+# 2024-12-17 10:28:13.519960
++y
+
+# 2024-12-17 10:28:13.525143
++/run python osint_lookup.py johndoe
+
+# 2024-12-17 10:28:13.525276
++/run python osint_lookup.py johndoe
+
+# 2024-12-17 10:28:19.347892
++y
+
+# 2024-12-17 10:28:45.448066
++try with my username "eliastorjani"
+
+# 2024-12-17 10:30:01.145290
++let's test it. If it does not output anything, I guess we need to remove the verification
+
+# 2024-12-17 10:30:05.411095
++y
+
+# 2024-12-17 10:30:05.416152
++/run python osint_lookup.py eliastorjani
+
+# 2024-12-17 10:30:05.416340
++/run python osint_lookup.py eliastorjani
+
+# 2024-12-17 10:30:31.919593
++y
+
+# 2024-12-17 10:32:18.771532
++So the link that it was supposed to fetch information from is actually containing some relevance. Can you make a sanity output file that takes all data to a raw_output.txt, so we can see if there is an issue before
+
+# 2024-12-17 10:35:45.575978
++i understand the issue now. The OSINT_lookup.py program only takes the preview text from the link when googling, and not actually entering the website to read the entire post. Can you make it enter?
+
+# 2024-12-17 13:20:40.343183
++/architect
+
+# 2024-12-17 13:23:57.036294
++/architect My goal is to create a program that takes a [user]name, search it on the web with various google dorking techniques, clicks on relevant links, and retrieve information about that individual, and save the raw retrieved data available via the search result as a txt file. What libraries do you find most appropriate for this project? Do we just need a search api, or an entire browser to crawl for this (since the information is first visible when clicking the link from a search engine)
+
+# 2024-12-17 13:25:46.814608
++y
+
+# 2024-12-17 13:28:43.731233
++/architect Do we really need requests, BeautifulSoup or regex, and a (google|brave|serper...) Search API, when we have selenium? Isn't the browser automation by selenium (and tools alike pupetteer, and playwright) suficiently covering these tasks?
+
+# 2024-12-17 13:29:41.507381
++y
+
+# 2024-12-17 13:37:05.580813
++/architect For the sake of proof of concept, can you show me how a simple selenium and panda version would look? Close to boilerplate python
+
+# 2024-12-17 13:37:28.698501
++y
+
+# 2024-12-17 13:38:54.686335
++is a webdriver the most lean way to do it+
+
+# 2024-12-17 13:40:10.784591
++I only need to click on the links in the default initial search engine. Can this be accomplished another way than with selenium webdrivers?
+
+# 2024-12-17 13:42:24.942044
++Can it be acomplished without a browser at all? How would I tell that we need the results from when clicking the links the search engine provide, and not just the preview in the around the links in google?
+
+# 2025-08-15 02:50:09.648278
++y

@@ -1,0 +1,15 @@
+[user]
+	email = elto21ab@student.cbs.dk
+[github]
+	user = elto21ab
+[http]
+    postBuffer = 524288000
+[core]
+    compression = 1
+[credential]
+	helper = cache --timeout=31536000
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

@@ -1,0 +1,101 @@
+version = 3
+final_space = true
+
+[upgrade]
+  source = 'cdn'
+  interval = '168h'
+  auto = true
+  notice = false
+
+[transient_prompt]
+background = "transparent"
+foreground = "#ffffff"
+template = "{{ .Shell }}> "
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ' '
+    template = '{{ .UserName }}'
+    foreground = '#E64747'
+    background = '#29315A'
+    type = 'session'
+    style = 'diamond'
+
+  [[blocks.segments]]
+    leading_diamond = ' '
+    trailing_diamond = ''
+    template = '{{ .HEAD }}'
+    foreground = '#43CCEA'
+    background = '#29315A'
+    type = 'git'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      branch_icon = ''
+
+  [[blocks.segments]]
+    leading_diamond = ' '
+    trailing_diamond = ''
+    template = '{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}'
+    foreground = '#E4F34A'
+    background = '#29315A'
+    type = 'python'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      fetch_version = false
+
+  [[blocks.segments]]
+    leading_diamond = ' '
+    foreground = '#9B6BDF'
+    background = '#29315A'
+    foreground_templates = ['{{if eq "Charging" .State.String}}#40c4ff{{end}}', '{{if eq "Discharging" .State.String}}#ff5722{{end}}', '{{if eq "Full" .State.String}}#4caf50{{end}}']
+
+    [blocks.segments.properties]
+      charged_icon = ' '
+      charging_icon = '⇡ '
+      discharging_icon = '⇣ '
+  
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ''
+    template = ' {{ .Path }}'
+    foreground = '#3EC669'
+    background = '#29315A'
+    type = 'path'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      style = 'folder'
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = false
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ' '
+    template = '{{ .FormattedMs }}'
+    foreground = '#AEA4BF'
+    background = '#29315A'
+    type = 'executiontime'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      style = 'austin'
+      threshold = 150.0
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ''
+    template = '❯'
+    foreground = '#7FD5EA'
+    background = '#29315A'
+    type = 'text'
+    style = 'diamond'

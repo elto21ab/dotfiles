@@ -1,0 +1,39 @@
+{
+    "jobs_tab_visibility": "shown",
+    "initial_working_directory": "~",
+    "num_spaces_for_tab": 4,
+    "editor_theme": "iPlastic",
+    "posix_terminal_shell": "bash",
+    "panes": {
+        "quadrants": [
+            "Source",
+            "Console",
+            "TabSet1",
+            "TabSet2"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Plots",
+            "Connections",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Files",
+            "Packages",
+            "Help",
+            "Viewer",
+            "Presentations"
+        ],
+        "hiddenTabSet": [],
+        "console_left_on_top": false,
+        "console_right_on_top": true,
+        "additional_source_columns": 0
+    },
+    "copilot_enabled": true,
+    "copilot_indexing_enabled": true,
+    "copilot_completions_delay": 10
+}

@@ -1,0 +1,97 @@
+#!/usr/bin/env sh
+
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+# sudo yabai --load-sa
+# --install-service
+
+# stack, float, bsp
+yabai -m config layout              float		\
+        	    auto_balance        on   	\
+                split_ratio         0.7 	\
+                window_placement    first_child\
+                window_animation_duration  0.1  \
+
+# yabai -m config menubar_opacity     1.0
+
+#yabai -m config --space 3 layout float
+#yabai -m config --space 4 layout float
+
+yabai -m config top_padding         0           \
+                bottom_padding      5           \
+                left_padding        5           \
+                right_padding       5           \
+                window_gap          7          \
+
+
+# autoraise _focus
+yabai -m config focus_follows_mouse autofocus   \
+                mouse_modifier      ctrl        \
+                mouse_action1       resize      \
+                mouse_action2       move        \
+                mouse_drop_action   swap #stack       \
+
+#yabai -m config --display 2 layout float        \
+#               top_padding         20           \
+#               bottom_padding      40           \
+#              	left_padding        40           \
+#             	right_padding       40           \
+#             	window_gap          20          \
+
+#yabai -m config --display "
+#^external screen should have padding at edges #TODO
+
+# split_type=auto
+# yabai -m space [‹SPACE SEL>] ≤COMMAND> --layout
+# yabai -m window [<WINDOW SEL>] <COMMAND> --space --swap --stack --display
+    # -toggle float|sticky|pip
+
+# yabai -m rule --add app=".*" manage=off
+# yabai -m rule --add app="^iTerm2$" manage=on
+yabai -m rule --add app="^(BusyCal|Password|Ghostty)" manage=off
+yabai -m rule --add app="^(System Settings|Software Update|System Information|Dictionary|Photo Booth|Alfred|Raycast|App Store|QuickTime Player)$" manage=off
+yabai -m rule --add app="^(Finder)$" manage=off #sticky=on
+# yabai -m rule --add label="About This Mac" title="About This Mac" manage=off
+
+#yabai -m space 4 --label float #name space
+#yabai -m space 3 --label chat
+#yabai -m rule --add app="^(Beeper|Messages|Facetime|Texts)" space=^"chat"
+
+# Whenever a PIP occours for videos in another fan
+# yabai -m rule --add app="^Zen$" title="^Space.*$" manage=off layer=below
+# yabai -m rule --add app="^Zen$" title="^$" manage=off layer=below
+yabai -m rule --add app="^Arc$" title="^Space.*$" manage=off layer=below
+yabai -m rule --add app="^Arc$" title="^$" manage=off layer=below
+# yabai -m rule --add app="^Firefox$" title="^Space.*$" manage=off layer=below
+# yabai -m rule --add app="^Firefox$" title="^$" manage=off layer=below
+
+# yabai -m signal --add event=mission_control_exit action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=display_added action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=display_removed action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_created action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_destroyed action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_focused action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_moved action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_resized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_minimized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# yabai -m signal --add event=window_deminimized action='echo "refresh windows" | nc -U /tmp/yabai-indicator.socket'
+# add to anything that modify space/window arrangement: echo "refresh" | nc -U /tmp/yabai-indicator.socket
+
+# Debug mode on
+# yabai -m config debug_output on
+
+# Auto update yabai
+# YABAI_CERT=yabai-cert sh -c "$(curl -fsSL "https://git.io/update-yabai")" &
+
+echo "yabai configuration loaded.."
+
+# yabai -m rule --apply
+
+# echo "refresh" | nc -U /tmp/yabai-indicator.socket
+# echo "yabai configuration loaded..."
+# printf "yabai: configuration loaded...\\n"
+####################################################
+# !/usr/bin/env sh
+# set -x
